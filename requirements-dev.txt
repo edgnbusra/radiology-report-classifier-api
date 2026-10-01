@@ -1,0 +1,3 @@
+# Geliştirme: veri analizi (step3) ve yerel kontroller (step4). Docker'a girmez.
+-r requirements.txt
+datasets==5.0.1

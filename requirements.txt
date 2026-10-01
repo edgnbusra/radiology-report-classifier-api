@@ -1,0 +1,14 @@
+# Servisin (FastAPI + model) çalışması için gerekenler. Docker image'ı bunu kurar.
+# torch'u CPU index'inden kur (GPU sürümünden ~10 kat küçük):
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+
+# Hugging Face: BioBERT + LoRA adapter'ı indirme ve yükleme
+transformers==5.18.0
+peft==0.21.1
+huggingface_hub==1.33.0
+safetensors==0.8.0
+
+# Web servisi
+fastapi==0.142.2
+uvicorn[standard]==0.54.0

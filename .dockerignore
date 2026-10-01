@@ -1,0 +1,30 @@
+# Docker build'e gönderilmeyecek dosyalar (imajı küçük ve temiz tutar)
+
+# Windows sanal ortamı: Linux container'da çalışmaz, ~1 GB
+.venv/
+venv/
+
+# Python önbellekleri
+__pycache__/
+*.pyc
+
+# Gizli bilgiler (ör. Hugging Face token): imaja ASLA girmemeli
+.env
+
+# Yerel model ve veri: imaj modeli Hub'dan, sabit revision ile indirir
+models/
+data/
+
+# Öğrenme/eğitim dosyaları (servis çalışması için gerekmez)
+step*.py
+train_lora.ipynb
+requirements-dev.txt
+
+# Git ve editör dosyaları
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Dokümantasyon
+README.md
